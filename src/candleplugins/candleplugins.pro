@@ -5,6 +5,7 @@ TRANSLATIONS =  camera/translation_ru.ts \
                 coordinatesystem/translation_ru.ts
 
 qtPrepareTool(LRELEASE, lrelease)
+LRELEASE ~= s,\',\",g
 for(tsfile, TRANSLATIONS) {
     qmfile = $$tsfile
     qmfile ~= s,.ts$,.qm,

@@ -8,10 +8,10 @@ CONFIG(debug, debug|release) {
     DESTDIR = $$PWD/../plugins/script
 }
 
-win32:{
-    QMAKE_CXXFLAGS += /MP /GS /Zi
-    QMAKE_LFLAGS += /DEBUG /OPT:REF /OPT:ICF
-}
+#win32:{
+#    QMAKE_CXXFLAGS += /MP /GS /Zi
+#    QMAKE_LFLAGS += /DEBUG /OPT:REF /OPT:ICF
+#}
 
 QT += script
 CONFIG += plugin release build_all
